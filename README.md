@@ -1,4 +1,3 @@
-# NLP
 # HOTEL REVIEW ANALYSIS - CUSTOMER SENTIMENT ORIENTATION STUDY 🙂 😐 ☹️
 ![](https://images.pexels.com/photos/60217/pexels-photo-60217.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)
 
