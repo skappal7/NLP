@@ -170,7 +170,8 @@ print(saved_lda)
 ```
 LdaModel(num_terms=32301, num_topics=200, decay=0.5, chunksize=100)
 
-# That's about it, this is how simple it is to create an end to end NLP model using PyCaret 😀😀😀, Please start this repo if you liked the content
+
+That's about it, this is how simple it is to create an end to end NLP model using PyCaret 😀😀😀, Please star this repo if you liked the content
 
  
 
