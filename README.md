@@ -133,9 +133,44 @@ evaluate_model(tuned_unsupervised )
 ```
 ![](https://github.com/skappal7/NLP/blob/main/Image/7%20Evaluate%20Model%20tuned%20LDA.PNG?auto=compress&cs=tinysrgb&dpr=1&w=500)
 
+```python
+from typing import Iterator
+print(tuned_unsupervised)
+```
+LdaModel(num_terms=32301, num_topics=200, decay=0.5, chunksize=100)
+```python
+from typing import Iterator
+plot_model(tuned_unsupervised, plot = 'topic_distribution')
+```
+![](https://github.com/skappal7/NLP/blob/main/Image/8%20Topic%20Distribution%20tuned%20LDA.PNG?auto=compress&cs=tinysrgb&dpr=1&w=500)
 
+```python
+from typing import Iterator
+plot_model(tuned_unsupervised, plot = 'frequency', topic_num = 'Topic 70')
+```
+![](https://github.com/skappal7/NLP/blob/main/Image/9%20Topic%2070%20Top%20100%20Post%20Stop%20Words%20Removal.PNG?auto=compress&cs=tinysrgb&dpr=1&w=500)
 
+```python
+from typing import Iterator
+save_model(tuned_unsupervised,'Final Tuned LDA Model 07072021')
+```
+Model Succesfully Saved
+(<gensim.models.ldamulticore.LdaMulticore at 0x7f95e70d8f10>,
+ 'Final Tuned LDA Model 07072021.pkl')
+ 
+```python
+from typing import Iterator
+saved_lda = load_model('Final Tuned LDA Model 07072021')
+```
+Model Sucessfully Loaded
 
+```python
+from typing import Iterator
+print(saved_lda)
+```
+LdaModel(num_terms=32301, num_topics=200, decay=0.5, chunksize=100)
 
+# That's about it, this is how simple it is to create an end to end NLP model using PyCaret 😀😀😀, Please start this repo if you liked the content
 
+ 
 
