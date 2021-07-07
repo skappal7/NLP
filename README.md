@@ -74,6 +74,24 @@ from typing import Iterator
 lda_results = assign_model(lda2)
 lda_results.head()
 ```
-![](https://github.com/skappal7/NLP/blob/main/Image/1%20Table.PNG?auto=compress&cs=tinysrgb&dpr=1&w=500)
+![](https://github.com/skappal7/NLP/blob/main/Image/1%20Table%202.PNG?auto=compress&cs=tinysrgb&dpr=1&w=500)
 
+```python
+from typing import Iterator
+plot_model()
+```
+![](https://github.com/skappal7/NLP/blob/main/Image/1%20top%20100%20Words.png?auto=compress&cs=tinysrgb&dpr=1&w=500)
 
+**Top 100 Biagrams**
+```python
+from typing import Iterator
+plot_model(plot = 'bigram')
+```
+![](https://github.com/skappal7/NLP/blob/main/Image/2%20top%20100%20Bigrams.PNG?auto=compress&cs=tinysrgb&dpr=1&w=500)
+
+**Frequency Distribution of Topic 5**
+```python
+from typing import Iterator
+plot_model(lda2, plot = 'frequency', topic_num = 'Topic 5')
+```
+![](https://github.com/skappal7/NLP/blob/main/Image/3%20top%20100%20Post%20Remmoving%20Stop%20Words.PNG?auto=compress&cs=tinysrgb&dpr=1&w=500)
