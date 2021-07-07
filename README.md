@@ -62,6 +62,18 @@ nlp_sent = setup(data = data, target = 'Review', session_id = 999,log_experiment
 **What is Topic Model?** 
 In machine learning and natural language processing, a topic model is a type of statistical model for discovering the abstract "topics" that occur in a collection of documents. Topic modeling is a frequently used text-mining tool for discovery of hidden semantic structures in a text body. Intuitively, given that a document is about a particular topic, one would expect particular words to appear in the document more or less frequently. In a hotel review dataset checkin, checkout, night stay etc. words will appear mostly relative to various customer experience intensities.
 
+```python
+from typing import Iterator
+lda = create_model('lda')
+print(lda2)
+```
+LdaModel(num_terms=32301, num_topics=6, decay=0.5, chunksize=100)
 
+```python
+from typing import Iterator
+lda_results = assign_model(lda2)
+lda_results.head()
+```
+![](https://github.com/skappal7/NLP/blob/main/Image/1%20Table.PNG?auto=compress&cs=tinysrgb&dpr=1&w=500)
 
 
