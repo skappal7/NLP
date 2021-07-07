@@ -95,3 +95,47 @@ from typing import Iterator
 plot_model(lda2, plot = 'frequency', topic_num = 'Topic 5')
 ```
 ![](https://github.com/skappal7/NLP/blob/main/Image/3%20top%20100%20Post%20Remmoving%20Stop%20Words.PNG?auto=compress&cs=tinysrgb&dpr=1&w=500)
+
+**Topic Distribution** 
+
+```python
+from typing import Iterator
+plot_model(lda2, plot = 'topic_distribution')
+```
+![](https://github.com/skappal7/NLP/blob/main/Image/4%20Topic%20Distribution.PNG?auto=compress&cs=tinysrgb&dpr=1&w=500)
+
+**Model Evaluation** 
+```python
+from typing import Iterator
+evaluate_model(lda2)
+```
+![](https://github.com/skappal7/NLP/blob/main/Image/5%20Model%20Evaluation.PNG?auto=compress&cs=tinysrgb&dpr=1&w=500)
+
+# Intrinsic Model Evaluation Method Using Coherence Value
+
+**What is Intrinsic Evaluation Method?**
+
+Intrinsic evaluation methods assess how well the word embeddings inherently capture the semantic or syntactic relationships between the words. Where Semantics refers to the meaning of words, whereas syntax refers to the grammar. You could also evaluate the embeddings on syntactic analogies, such as plurals, tenses and comparatives.
+N
+Hence, using the tune_model() we will create a topic coherence score by iterating on a pre-defined grid with different number of topics and create a model for each parameter.Topic coherence is then evaluated for different models and are visually presented in a graph that has the  Coherence Score on y-axis as a function of # Topics on x-axis. You can view the results below:
+
+**Note: This part of the process took the longest around 4+ hours to create the semantic and syntactic relationships in between the topics.**
+
+```python
+from typing import Iterator
+tuned_unsupervised = tune_model(model = 'lda', multi_core = True)
+```
+![](https://github.com/skappal7/NLP/blob/main/Image/6%20Topic%20Coherence.PNG?auto=compress&cs=tinysrgb&dpr=1&w=500)
+
+```python
+from typing import Iterator
+evaluate_model(tuned_unsupervised )
+```
+![](https://github.com/skappal7/NLP/blob/main/Image/7%20Evaluate%20Model%20tuned%20LDA.PNG?auto=compress&cs=tinysrgb&dpr=1&w=500)
+
+
+
+
+
+
+
