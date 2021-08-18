@@ -3,7 +3,7 @@
 
 OBJECTIVE 💡
 
-**The objective of this analysis is to understand the sentiment orientation of the customer relative to their hote stay. The secondary aim of this analysis is to identify topics and themes to create customer experience improvement related strategies based on the data insights.**
+**The objective of this analysis is to understand the sentiment orientation of the customer relative to their hotel stay. The secondary aim of this analysis is to identify topics and themes to create customer experience improvement related strategies based on the data insights.**
 
 **Getting the data:**
 To get the data within Kaggle you just need to run the below code block which will get the data ingested within the environment. In case you are using Google Colab you just need to get the data path from the lefthand side panel or you can also mount the google drive to access the data from your google drive. 
