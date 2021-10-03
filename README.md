@@ -17,7 +17,7 @@ from typing import Iterator
 
 import pandas as pd
 ```
-PyCaret is a low code Ml flow library that provides hossts of packages to solve various data related problems starting from simple regression to NL related acticities. In this notebook I will utilizing PyCAret's NLP library to perform the Hotel Review Sentiment Analysis, creating a Latent Dirichlet Allocation Model and assigning that model to new set of data for sentiment prediction. 
+PyCaret is a low code Ml flow library that provides hossts of packages to solve various data related problems starting from simple regression to NLP related activities. In this notebook I will utilizing PyCAret's NLP library to perform the Hotel Review Sentiment Analysis, creating a Latent Dirichlet Allocation Model and assigning that model to new set of data for sentiment prediction. 
 
 Options to install PyCaret:
 * pip intall pycaret (basic)
